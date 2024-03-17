@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="BMI.css">
+</head>
+
+<body>
+    <div class="top-nav-bar">
+        <img src="images/button.png" alt="logo" id="arror" onclick="window.location.href='Home.html'">
+        <h1>BMI Calculator</h1>
+        <div class="menue-bar">
+            <img src="images/menueBar.png" alt="menu" id="menue">
+        </div>
+    </div>
+    <div class="gender">
+        <img src="images/male.png" alt="male">
+        <img src="images/female.png" alt="female">
+    </div>
+
+    <input type="text" name="Height" id="Height" placeholder="Height">
+    <input type="text" name="Weight" id="Weight" placeholder="Weight">
+
+    <button>
+        Calculate
+    </button>
+
+    <div class="BMI" id="result">
+
+    </div>
+</body>
+<script>
+    function calculateBMI() {
+        // Get input values
+        var height = parseFloat(document.getElementById('Height').value);
+        var weight = parseFloat(document.getElementById('Weight').value);
+
+        // Check if inputs are valid numbers
+        if (isNaN(height) || isNaN(weight)) {
+            document.getElementById('result').innerHTML = "Invalid height or weight.";
+            return;
+        }
+
+        // Calculate BMI
+        var bmi = weight / Math.pow(height, 2);
+
+        // Display the result
+        document.getElementById('result').innerHTML = bmi.toFixed(2);
+    }
+    
+    // Add event listener to the button to call the calculateBMI function
+    document.querySelector('button').addEventListener('click', calculateBMI);
+</script>
+
+</html>
