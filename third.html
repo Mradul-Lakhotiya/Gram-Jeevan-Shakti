@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="third.css">
+</head>
+<body>
+    <img src="images/button.png" alt="logo" id="arror" onclick="window.location.href='first.html'">
+    <h1> Sign Up</h1>
+    <form>
+        <div class="input-group">
+            <select id="signup-as">
+                <option value="select" disabled selected style>Sign Up as</option>
+                <option value="admin">Admin</option>
+                <option value="User">User</option>
+                <option value="Doctor">Doctor</option>
+                <option value="local">Local Health Worker</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <img src="images/Profile.png" alt="user" id="one">
+            <input type="text" id="username" placeholder="       Enter your username">
+        </div>
+        <div class="input-group">
+            <img src="images/Email.png" alt="user" id="two">
+            <input type="email" id="email" placeholder="       Enter your email">
+        </div>
+        <div class="input-group">
+            <img src="images/lock.png" alt="user" id="three">
+            <input type="password" id="password" placeholder="       Enter your password">
+            <img src="images/eye.png" alt="show" class="toggle-password" onclick="togglePasswordVisibility('password')">
+        </div>  
+        <div class="input-group">
+            <img src="images/lock.png" alt="user" id="four">
+            <input type="password" id="confirm-password" placeholder="       Confirm your password">
+            <img src="images/button.png" alt="show" class="toggle-password" onclick="togglePasswordVisibility('confirm-password')">
+        </div>
+    </form>
+    <button id="signup" onclick="window.location.href='fourth.html'">Sign Up</button>
+    <p>Already have an account? <a href="second.html" style="color: #199a8e;">Log In</a></p>
+    <script>
+        function togglePasswordVisibility(inputId) {
+            var x = document.getElementById(inputId);
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

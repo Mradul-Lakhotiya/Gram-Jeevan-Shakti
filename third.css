@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    position: fixed;
+    align-items: center;
+    top: 10px;
+}
+img{
+    position: absolute;
+    top: 36px;
+    right: 270px;
+}
+form{
+    position: relative;
+    top: -80px;
+    left: 100px;
+}
+.input-group {
+    margin-bottom: 20px;
+    
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    color: #666666;
+    border-radius: 20px;
+    width: 320px;
+    left: 30px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    width: 300px;
+    border-radius: 20px;
+    font-size: 16px;
+    max-width: 700px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+}
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
+    max-width: 40px;
+}
+#one{
+    position: relative;
+    left: 30px;
+    top:0px;
+}
+#two{
+    position: relative;
+    left: 31px;
+    top:0px;
+}
+#three{
+    position: relative;
+    left: 31px;
+    top:0px;
+}
+#four{
+    position: relative;
+    left: 31px;
+    top:0px;
+}
+.input-group {
+    position: relative;
+}
+.input-group input[type=text], 
+.input-group input[type=email], 
+.input-group input[type=password] {
+    padding-left: 40px; /* Adjust this value to make room for the image */
+}
+.input-group img.placeholder {
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Adjust this value to position the image */
+    transform: translateY(-50%);
+    width: 20px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#signup {
+    position: absolute;
+    top: 59%;
+    left: 13%;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 38px;
+    border: 2px solid #199a8e;
+    text-decoration: none;
+    color: #199a8e;
+    font-weight: 500;
+    font-size: large;
+    height: 50px;
+    width: 258px;
+  }
+p{
+    position: relative;
+    left: 30px;
+    top: 150px;
+    left:-20px;
+}
